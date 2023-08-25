@@ -133,6 +133,9 @@
     <Content Include="Content\Site\images\blog\2.jpg" />
     <Content Include="Content\Site\images\blog\3.jpg" />
     <Content Include="Content\Site\images\blog\bs.jpg" />
+    <Content Include="Content\Site\images\blog\copy-of-sherry.jpeg" />
+    <Content Include="Content\Site\images\blog\gettyimages-1336419387-612x612.jpg" />
+    <Content Include="Content\Site\images\blog\pexels-pixabay-236748.jpg" />
     <Content Include="Content\Site\images\icons\preloader.gif" />
     <Content Include="Content\Site\images\logo\aydin.png" />
     <Content Include="Content\Site\images\logo\aydinEdit1.png" />
@@ -199,6 +202,8 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AboutController.cs" />
+    <Compile Include="Controllers\BlogController.cs" />
+    <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -220,6 +225,12 @@
     <Content Include="Views\Home\Counter.cshtml" />
     <Content Include="Views\Home\Blog.cshtml" />
     <Content Include="Views\About\Index.cshtml" />
+    <Content Include="Views\Blog\Index.cshtml" />
+    <Content Include="Views\Blog\Category.cshtml" />
+    <Content Include="Views\Blog\Populer.cshtml" />
+    <Content Include="Views\Blog\Tag.cshtml" />
+    <Content Include="Views\Blog\Detail.cshtml" />
+    <Content Include="Views\Contact\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -232,7 +243,6 @@
     <Folder Include="Content\Admin\" />
     <Folder Include="Content\Site\images\clients\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\Blog\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

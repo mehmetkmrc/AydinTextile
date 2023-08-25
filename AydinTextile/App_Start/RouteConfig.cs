@@ -14,9 +14,19 @@ namespace AydinTextile
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
             routes.MapRoute(
                 name: "About",
-                url: "{controller}/{action}/{id}",
+                url: "hakkimizda",
                 defaults: new { controller = "About", action = "Index" }
             );
+            routes.MapRoute(
+                name: "Blog",
+                url: "blog",
+                defaults: new { controller = "Blog", action = "Index" }
+                );
+            routes.MapRoute(
+                name: "Contact",
+                url: "İletişim",
+                defaults: new { controller = "Contact", action = "Index" }
+                );
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
